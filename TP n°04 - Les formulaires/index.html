@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mon TP sur les formulaires">
+  <title>TP Formulaire</title>
+  <link rel="shortcut icon" href="./Images/favicon-32x32.png">
+</head>
+
+<body>
+  <header>
+    <h1>VULQUIN Jérôme - Les formulaires</h1>
+  </header>
+  <main>
+    <form action="#" method="POST">
+      <h2>Mon premier formulaire</h2>
+        <input type="radio" id="Homme" name="genre" value="Homme" checked>
+        <label for="Homme">Homme</label>
+        <input type="radio" id="Femme" name="genre" value="Femme">
+        <label for="Femme">Femme</label>
+        <input type="radio" id="Non-renseigné" name="genre" value="Non-renseigné">
+        <label for="Non-renseigné">Non renseigné</label>
+        <br>
+        <label for="Nom">Nom :</label>
+        <input type="text" name="Nom" placeholder="Saisissez votre nom" id="Nom">
+      <br>
+        <label for="Prénom">Prénom :</label>
+        <input type="text" name="Prénom" placeholder="Saisissez votre prénom" id="Prénom">
+      <br>
+        <label for="Age">Age :</label>
+          <input type="number" name="Age" placeholder="Age" id="Age" min="16" max="99">
+      <br>
+        <label for="email">Email :</label>
+          <input type="email" name="email" placeholder="Saisissez votre adresse mail" id="email">
+      <br>
+        <label for="message">Message :</label>
+        <textarea name="message" placeholder="Saisissez vos commentaires ici" id="message"></textarea>
+      <br>
+        <label for="cu"></label>
+        <input type="checkbox" name="cu" id="cu"> En cochant cette case j'accepte les conditions relatives à
+          l'utilisation de mes données personnelles. (accéder aux mentions légales)
+      <br>
+      <input type="submit" name="envoyer" value="Envoyer le message">
+  </form>
+    <hr>
+    <h2>Ensemble de champs</h2>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend><b>MON SECOND FORMULAIRE</b></legend>
+        <fieldset>
+          <legend><b>Identité</b></legend>
+          <br>
+          <label for="Homme2">Homme</label>
+          <input type="radio" id="Homme2" name="genre" value="Homme" checked>
+          <label for="Femme2">Femme</label>
+          <input type="radio" id="Femme2" name="genre" value="Femme">
+          <label for="Non-renseigné2">Non renseigné</label>
+          <input type="radio" id="Non-renseigné2" name="genre" value="Non-renseigné">
+          <div>
+          <br>
+          <label for="Nom2">Nom :</label>
+          <input type="text" name="Nom" placeholder="Saisissez votre nom" id="Nom2">
+          </div>
+          <br>
+          <div>
+          <label for="Prénom2">Prénom :</label>
+          <input type="text" name="Prénom" placeholder="Saisissez votre prénom" id="Prénom2">
+          </div>
+          <br>
+          <div>
+          <label for="Age2">Age :</label>
+          <input type="number" name="Age" placeholder="Age" id="Age2" min="16" max="99">
+          </div>
+          <br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend><b>Situation personnelle</b></legend>
+          <br>
+          <label for="Célibataire">Célibataire</label>
+          <input type="radio" id="Célibataire" name="situation" value="Célibataire" checked>
+          <label for="Marié">Marié</label>
+          <input type="radio" id="Marié" name="situation" value="Marié">
+          <label for="Veuf">Veuf</label>
+          <input type="radio" id="Veuf" name="situation" value="Veuf">
+          <label for="Union-Libre">Union-Libre</label>
+          <input type="radio" id="Union-Libre" name="situation" value="Union-Libre">
+          <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend><b>Contact</b></legend>
+          <br>
+          <div>
+            <label for="téléphone">Téléphone :</label>
+            <input type="tel" name="Téléphone" placeholder="Saisissez votre n° de téléphone" id="téléphone" size="24">
+          </div>
+          <br>
+          <div>
+            <label for="email2">Email :</label>
+              <input type="email" name="Email" placeholder="Saisissez votre email" id="email2">
+          </div>
+          <br>
+        </fieldset>
+        <br>
+        <div>
+          <label for="cu2"></label>
+            <input type="checkbox" name="cu2" id="cu2"> En cochant cette case je confirme que les données renseignées sont
+            exactes.
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="transmettre" value="Transmettre mes coordonnées">
+        </div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+h2{
+    color:blueviolet;
+}
+
+table{
+    border: 2px solid red;
+}
+
+td{
+    background-color: aqua;
+}
+
+thead{
+    border: 4mm ridge rgba(161, 25, 25, 0.6);
+}
+
+th{
+    color:rgb(255, 255, 255);
+    background-color: rgb(148, 104, 148);
+    font-size: 16px;
+    font-style:oblique;
+}
+/* N'oubliez pas de déclarer une table des contenus */
